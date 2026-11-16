@@ -1,0 +1,221 @@
+/**
+ * Inventory Page Styles - VeggieTrack
+ */
+
+/* Filter Bar */
+.filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+}
+
+.search-input {
+    padding-left: 2.5rem !important;
+}
+
+.filter-select {
+    min-width: 180px;
+}
+
+/* Table Section */
+.table-section {
+    margin-bottom: 1.5rem;
+}
+
+/* Product Cell */
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.product-icon {
+    font-size: 1.3rem;
+}
+
+.product-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Stock Badges */
+.stock-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.stock-ok {
+    background: rgba(34, 197, 94, 0.12);
+    color: #15803d;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.stock-low {
+    background: rgba(245, 158, 11, 0.12);
+    color: #b45309;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.stock-out {
+    background: rgba(239, 68, 68, 0.12);
+    color: #b91c1c;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Shelf Life Badges */
+.shelf-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.shelf-fresh {
+    background: rgba(34, 197, 94, 0.12);
+    color: #15803d;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.shelf-warning {
+    background: rgba(245, 158, 11, 0.12);
+    color: #b45309;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.shelf-expired {
+    background: rgba(239, 68, 68, 0.12);
+    color: #b91c1c;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Sold Input */
+.sold-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.sold-input {
+    width: 55px !important;
+    padding: 0.35rem 0.5rem !important;
+    text-align: center;
+    font-size: 0.8rem !important;
+}
+
+.sold-btn {
+    padding: 0.35rem 0.5rem !important;
+    font-size: 0.8rem !important;
+    min-width: unset;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.btn-icon {
+    padding: 0.3rem;
+    font-size: 0.85rem;
+    border-radius: var(--radius-sm);
+}
+
+.btn-danger-icon:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* Low Stock Section */
+.alert-section {
+    margin-top: 1rem;
+}
+
+.low-stock-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.low-stock-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(245, 158, 11, 0.12);
+    border-radius: var(--radius-sm);
+}
+
+.low-stock-card .low-stock-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.low-stock-card .low-stock-info strong {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.low-stock-card .low-stock-info span {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+/* Reorder Info */
+.reorder-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.75rem;
+    background: var(--bg-card);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+}
+
+.reorder-info strong {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.reorder-info span {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+/* Empty Table */
+.empty-table {
+    text-align: center;
+    padding: 3rem 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .search-wrapper {
+        max-width: 100%;
+    }
+}

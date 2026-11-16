@@ -1,0 +1,146 @@
+/**
+ * Insights Page Styles - VeggieTrack
+ */
+
+/* Selection Card */
+.selection-card {
+    margin-bottom: 1.5rem;
+}
+
+.selection-search {
+    margin-bottom: 1rem;
+}
+
+/* Product Selection Grid */
+.product-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.75rem;
+}
+
+.product-select-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.product-select-card:hover {
+    border-color: var(--border-focus);
+    background: #f0fdf4;
+}
+
+.product-select-card.selected {
+    border-color: var(--accent-green);
+    background: #dcfce7;
+}
+
+.product-select-check {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.product-select-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-select-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.product-select-sku {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+}
+
+.product-select-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-select-stock {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.product-select-shelf {
+    font-size: 0.7rem;
+    color: var(--accent-orange);
+}
+
+/* Chart Card */
+.chart-card {
+    margin-bottom: 1.5rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.stat-card {
+    padding: 1.25rem;
+}
+
+.stat-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.stat-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.stat-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.stat-mini-label {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    font-weight: 500;
+}
+
+.stat-mini-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-selection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}

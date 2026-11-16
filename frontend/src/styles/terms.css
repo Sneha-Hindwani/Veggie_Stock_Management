@@ -1,0 +1,22 @@
+/* Terms Page - standalone, uses inline styles from original */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+.terms-page-wrapper { font-family: 'Inter', sans-serif; background: #f9fafb; color: #1f2937; line-height: 1.7; min-height: 100vh; }
+.terms-header { background: white; padding: 3rem 1.5rem 2rem; text-align: center; border-bottom: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.terms-header h1 { font-size: 2.2rem; font-weight: 800; color: #111827; margin-bottom: 0.5rem; }
+.terms-header p { color: #6b7280; font-size: 0.95rem; }
+.terms-header a { color: #16a34a; text-decoration: none; font-size: 0.9rem; font-weight: 500; display: inline-block; margin-top: 1rem; transition: color 0.2s; }
+.terms-header a:hover { color: #15803d; text-decoration: underline; }
+.terms-nav { max-width: 800px; margin: 2rem auto 0; padding: 0 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+.terms-nav a { display: inline-block; padding: 0.5rem 1.25rem; background: white; border: 1px solid #e5e7eb; border-radius: 50px; color: #374151; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+.terms-nav a:hover { border-color: #16a34a; color: #16a34a; background: #f0fdf4; }
+.terms-content { max-width: 800px; margin: 2rem auto 3rem; padding: 0 1.5rem; }
+.terms-section { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.terms-content h2 { color: #16a34a; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.6rem; }
+.terms-content h3 { color: #111827; font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+.terms-content p { color: #4b5563; font-size: 0.92rem; margin-bottom: 0.8rem; }
+.terms-content ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+.terms-content li { color: #4b5563; font-size: 0.9rem; margin-bottom: 0.5rem; }
+.terms-content li::marker { color: #16a34a; }
+.terms-content strong { color: #111827; }
+.terms-footer { text-align: center; padding: 2rem 1.5rem; border-top: 1px solid #e5e7eb; background: white; color: #9ca3af; font-size: 0.8rem; }
+@media (max-width: 600px) { .terms-section { padding: 1.5rem; } .terms-header h1 { font-size: 1.8rem; } }
